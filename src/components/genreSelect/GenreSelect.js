@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './genreSelect.css'
 
 function GenreSelect  ({ genres, selectedGenre: initialSelectedGenre = '' }) {
   const [selectedGenre, setSelectedGenre] = useState(initialSelectedGenre);
@@ -13,10 +14,7 @@ function GenreSelect  ({ genres, selectedGenre: initialSelectedGenre = '' }) {
         <button
           key={genre}
           onClick={() => handleSelect(genre)}
-          style={{
-            backgroundColor: genre === selectedGenre ? '#007BFF' : '#ccc',
-            color: genre === selectedGenre ? '#fff' : '#000'
-          }}
+          className={`genrebutton ${genre === selectedGenre ? 'selected' : ''}`}
         >
           {genre}
         </button>
