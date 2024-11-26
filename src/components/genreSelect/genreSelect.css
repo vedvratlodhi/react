@@ -1,0 +1,13 @@
+.genrebutton {
+  background-color: #ccc;
+  color: #000;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.genrebutton.selected {
+  background-color: #007BFF;
+  color: #fff;
+}
