@@ -19,7 +19,9 @@ const SearchForm = ({ initialQuery = '' }) => {
   };
 
   return (
-    <div>
+    <div className='searchDiv'>
+      <div class="messsageDiv">
+      FIND YOUR MOVIE</div>
       <input
         type="text"
         value={query}
@@ -28,7 +30,7 @@ const SearchForm = ({ initialQuery = '' }) => {
         placeholder="What do you want to watch?"
       />
       <button onClick={handleSearch} className='button'>
-        Search
+        SEARCH
       </button>
     </div>
   );

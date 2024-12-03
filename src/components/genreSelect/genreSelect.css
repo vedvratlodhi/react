@@ -1,6 +1,6 @@
 .genrebutton {
-  background-color: #ccc;
-  color: #000;
+  background-color: #232323;
+  color: #ffffff;
   padding: 10px;
   border: none;
   margin: 5px;
@@ -10,4 +10,9 @@
 .genrebutton.selected {
   background-color: #007BFF;
   color: #fff;
+}
+
+.genrediv {
+  text-align: left;
+  padding: 10px;
 }

@@ -1,3 +1,41 @@
 .button {
     background-color: #f65261;
+    width: 200px;
+    height: 50px;
+    color: #ffffff ;
+    border-radius: 7px;
+    margin: 5px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.searchDiv {
+    /* background-color: antiquewhite; */
+    margin-top: 100px;
+    width: 100%;
+    height: 30px;
+
+}
+
+.messsageDiv {
+    font-size: xx-large;
+    font-weight: lighter;
+    color: beige;
+    padding-left: 15%;
+    margin: 2%;
+    text-align: left;
+}
+
+input {
+    background-color: #05050580; /* Translucent background */
+    border: none; /* No border */
+    border-radius: 4px; /* Optional: Rounded corners */
+    padding: 10px; /* Space inside the input */
+    /* color: #333; Text color */
+    color: #ffffff ;
+    font-size: 16px; /* Adjust font size */
+    outline: none; /* Remove default focus outline */
+    box-shadow: none; /* Remove additional browser styling */
+    backdrop-filter: blur(10px); /* Optional: Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    height: 100%;
 }

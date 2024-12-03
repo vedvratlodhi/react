@@ -2,24 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    border: 1px solid #ccc;
+    width: 33%;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     color: #fff;
+    height:550px;
+    background-color: #232323;
+    /* margin: 25px; */
   }
   
   .movie-image {
-    width: 100%;
-    height: 300px;
+    width: 70%;
+    height: 80%;
     object-fit: cover;
   }
   
   .movie-details {
-    padding: 10px;
-    text-align: center;
+    /* padding: 10px; */
+    /* text-align: left; */
   }
   
   .menu {

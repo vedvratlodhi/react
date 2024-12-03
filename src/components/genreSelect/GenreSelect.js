@@ -9,7 +9,7 @@ function GenreSelect  ({ genres, selectedGenre: initialSelectedGenre = '' }) {
   };
 
   return (
-    <div>
+    <div className='genrediv'>
       {genres.map((genre) => (
         <button
           key={genre}

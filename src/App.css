@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #61dafb;
 }
 .component {
   border: #61dafb;
@@ -19,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #555555;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,3 +55,15 @@
   flex: 1;
 }
 
+.bckcolor{
+  background-color: #232323;
+  padding: 10px;
+  /* margin-top:10px */
+
+}
+
+
+.content {
+  background-color: aliceblue;
+  margin: 10px;
+}
