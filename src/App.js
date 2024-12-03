@@ -3,8 +3,13 @@ import './App.css';
 import Counter from './components/counter/Counter';
 import GenreSelect from './components/genreSelect/GenreSelect';
 import SearchForm from './components/searchForm/SearchForm';
+import MovieList from './components/movieList/movieList';
+
+
 
 function App() {
+
+
   return (
     <div className="App">
       
@@ -14,6 +19,10 @@ function App() {
   genres={['Action', 'Comedy', 'Drama', 'Horror']}
   selectedGenre="Drama"
 />
+<MovieList/>
+
+
+
 </div>
       
   );

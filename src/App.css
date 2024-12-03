@@ -41,3 +41,16 @@
     transform: rotate(360deg);
   }
 }
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between tiles */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.movie-list > * {
+  flex: 1;
+}
+

@@ -1,0 +1,53 @@
+.movie-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .movie-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .menu-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .context-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+  .menu-button:focus + .context-menu,
+  .menu-button:hover + .context-menu {
+    display: block;
+  }
+      
