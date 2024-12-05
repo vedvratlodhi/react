@@ -184,10 +184,20 @@ import MovieTile from "../movieTile/movieTile";
         },
       ];
 
-export default function MovieList() {
-
-    const handleMovieClick = (movieName) => {
-        console.log(`Movie clicked: ${movieName}`);
+export default function MovieList({onMovieSelect,sortBy}) {
+    const sortedMovies = [...movies].sort((a, b) => {
+        if (sortBy === "release_date") {
+          return new Date(a.release_date) - new Date(b.release_date);
+        }
+        if (sortBy === "title") {
+          return a.title.localeCompare(b.title);
+        }
+        return 0;
+      });
+    
+    const handleMovieClick = (movieId) => {
+        console.log(`Movie clicked: ${movieId}`);
+        onMovieSelect(movies.find((x)=>x.id ===movieId))
       };
     
       const handleEdit = (movieName) => {
@@ -200,7 +210,7 @@ export default function MovieList() {
       let x =0
     return (<div style={{'flex-wrap':'wrap', display:"flex",margin:"20px"}}>
         {
-        movies.map((movie) => (
+        sortedMovies.map((movie) => (
                     <MovieTile
           key={movie.title}
           movie={movie}

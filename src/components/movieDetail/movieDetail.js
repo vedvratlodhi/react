@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./MovieDetails.css";
 
-const MovieDetails = ({ movie }) => {
+ const MovieDetails = ({ movie }) => {
   if (!movie) {
     return <p>Please select a movie to see the details.</p>;
   }
@@ -22,8 +22,8 @@ const MovieDetails = ({ movie }) => {
   return (
     <div className="movie-details">
       {/* Movie Poster */}
-      <div className="poster">
-        <img src={imageUrl} alt={`${name} Poster`} />
+      <div className={"posterDiv"}>
+        <img className="poster" src={imageUrl} alt={`${name} Poster`} />
       </div>
 
       {/* Movie Information */}

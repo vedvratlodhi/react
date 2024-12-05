@@ -1,0 +1,14 @@
+.poster {
+    float: left;
+    width: 200px;
+    height: 300px;
+}
+
+.movie-details{
+    margin: 10px;
+height: 100%;
+color: #fff;
+background-color: #232323;
+}
+
+.info {}

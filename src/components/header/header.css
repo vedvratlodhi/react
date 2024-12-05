@@ -27,3 +27,17 @@
     color: #f65261;
     margin: 20px;
   }
+
+  .search-button {
+    float: right;
+  }
+
+  .non-blur{
+    background-color: #232323;
+    width: 100%;
+    height: 350px;
+  }
+
+  .MovieDetailsdiv{
+
+  }
